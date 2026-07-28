@@ -1,6 +1,6 @@
 import {
   LayoutDashboard, Megaphone, Hash, Zap, Users, GitCompareArrows,
-  Lightbulb, UtensilsCrossed, X, Menu
+  Lightbulb, UtensilsCrossed, Newspaper, X, Menu
 } from 'lucide-react'
 import { useState } from 'react'
 
@@ -11,6 +11,7 @@ const navItems = [
   { id: 'loadshedding', label: 'Load-Shedding Impact', icon: Zap },
   { id: 'consumer', label: 'Consumer Behaviour', icon: Users },
   { id: 'brands', label: 'Brand Comparison', icon: GitCompareArrows },
+  { id: 'news', label: 'Latest News', icon: Newspaper },
   { id: 'insights', label: 'Insights', icon: Lightbulb }
 ]
 
