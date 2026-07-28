@@ -7,6 +7,7 @@ import SocialTrends from './pages/SocialTrends'
 import LoadSheddingImpact from './pages/LoadSheddingImpact'
 import ConsumerBehaviour from './pages/ConsumerBehaviour'
 import BrandComparison from './pages/BrandComparison'
+import LatestNews from './pages/LatestNews'
 import Insights from './pages/Insights'
 import { adSpendByBrand, socialTrends } from './data/mockData'
 
@@ -27,6 +28,7 @@ const pageMeta = {
   loadshedding: { title: 'Load-Shedding Impact', description: 'How power cuts shift channel demand and revenue' },
   consumer: { title: 'Consumer Behaviour', description: 'Channel preference and intent by LSM segment' },
   brands: { title: 'Brand Comparison', description: 'Cross-brand spend, sentiment, and momentum' },
+  news: { title: 'Latest News', description: 'Recent QSR industry articles from credible South African sources' },
   insights: { title: 'Insights', description: 'Automatically generated observations and summary' }
 }
 
@@ -92,6 +94,7 @@ export default function App() {
       case 'loadshedding': return <LoadSheddingImpact filters={filters} />
       case 'consumer': return <ConsumerBehaviour />
       case 'brands': return <BrandComparison filters={filters} search={search} />
+      case 'news': return <LatestNews />
       case 'insights': return <Insights />
       default: return <Overview />
     }
